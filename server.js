@@ -24,7 +24,8 @@ knex.schema.hasTable ( "Users" ).then( exists => {
             table.string ( "Email" ).unique().notNullable(),
             table.string ( "Password" ).notNullable(),
             table.string ( "Name" ),
-            table.string ( "Role" )
+            table.string ( "Role" ),
+            table.string ( "Access" )
         }).then (( data ) => {
             console.log ( "Table created" );
             // console.log ( data );
